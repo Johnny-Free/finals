@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Search from './component/Search'
-import Result from './component/Result'
-import NavBar from './component/NavBar'
+import Search from './component/Search.js'
+import Result from './component/Result.js'
+import NavBar from './component/NavBar.js'
 
 class App extends Component {
   constructor(props){
