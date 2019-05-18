@@ -9,9 +9,10 @@ export default class Result extends Component{
         this.performSearch()
       }
 
-    const apiKey = process.env.finalAPI;
+    
     
     performSearch(searchTerm){
+      const apiKey = process.env.finalAPI;
       const url=`https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}&query=`
 
       $.ajax({
