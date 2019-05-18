@@ -2,6 +2,9 @@ import React, {Component} from 'react';
 import './result.css';
 import $ from 'jquery';
 
+const apiKey=process.env.finalAPI;
+console.log(apiKey);
+
 export default class Result extends Component{
     constructor(props){
         super(props)
@@ -12,8 +15,8 @@ export default class Result extends Component{
     
     
     performSearch(searchTerm){
-      const apiKey = process.env.finalAPI;
-      console.log(apiKey);
+      // const apiKey = process.env.finalAPI;
+      // console.log(apiKey);
       const url=`https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}&query=`
 
       $.ajax({
