@@ -13,10 +13,7 @@ export default class Result extends Component{
     
     
     performSearch(searchTerm){
-      // const apiKey = process.env.finalAPI;
-      // console.log(apiKey);
-      var {apiKey} = require('../server.js');
-      const url=`https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}&query=`
+      const url=`https://api.themoviedb.org/3/movie/now_playing?api_key=6dfd883e9d7ba2c9f162c09626872ead&query=`
 
       $.ajax({
         url: url,
