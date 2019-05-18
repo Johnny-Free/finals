@@ -8,9 +8,11 @@ export default class Result extends Component{
         this.state = {}
         this.performSearch()
       }
+
+    const apiKey = process.env.finalAPI;
     
     performSearch(searchTerm){
-      const url='https://api.themoviedb.org/3/movie/now_playing?api_key=6dfd883e9d7ba2c9f162c09626872ead&query='
+      const url=`https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}&query=`
 
       $.ajax({
         url: url,
