@@ -2,8 +2,7 @@ import React, {Component} from 'react';
 import './result.css';
 import $ from 'jquery';
 
-const apiKey=process.env.finalAPI;
-console.log(apiKey);
+
 
 export default class Result extends Component{
     constructor(props){
