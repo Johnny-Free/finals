@@ -3,7 +3,6 @@ import './result.css';
 import $ from 'jquery';
 
 
-
 export default class Result extends Component{
     constructor(props){
         super(props)
@@ -16,6 +15,7 @@ export default class Result extends Component{
     performSearch(searchTerm){
       // const apiKey = process.env.finalAPI;
       // console.log(apiKey);
+      var {apiKey} = require('../server.js');
       const url=`https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}&query=`
 
       $.ajax({

@@ -6,7 +6,9 @@ const port = process.env.PORT || 8080;
 const app = express();
 
 
-const apiKey=process.env.finalAPI;
+// const apiKey=process.env.finalAPI;
+// module.exports.apiKey = process.env.finalAPI;
+module.exports = { apiKey : process.env.finalAPI }
 console.log(apiKey);
 
 
